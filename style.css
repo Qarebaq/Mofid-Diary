@@ -1,0 +1,789 @@
+/**
+line 34 is important dont forget to check it!
+**/
+svg{
+  width:"13%";
+}
+h4{
+  font-family: "Vazirmatn";
+  text-shadow: -1px 1px 0 #000,
+  1px 1px 0 #000,
+  1px -1px 0 #000,
+  -1px -1px 0 #000;
+
+}
+
+p{
+  font-family: "Vazirmatn";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+i {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+h2 {
+  pointer-events: none; }
+
+body {
+  background-color: #E6E5E1;
+  }
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+
+ /** justify-content: center; **/
+
+
+
+  align-items: center; 
+  flex-direction: column; }
+  .container .card {
+    position: relative;
+    width: 700px;
+    height: 280px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 4px; }
+    .container .card:before {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      top: -10px;
+      left: 65px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: #E6E5E1; }
+    .container .card:after {
+      content: "";
+      z-index: 99;
+      position: absolute;
+      bottom: -10px;
+      left: 65px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+      background-color: #E6E5E1; }
+    .container .card ul {
+      z-index: 99;
+      position: absolute;
+      left: 72px;
+      top: 5px;
+      list-style-type: none; }
+      .container .card ul li {
+        width: 2px;
+        height: 2px;
+        border-radius: 2px;
+        margin: 6px 0;
+        background-color: #E6E5E1; }
+    .container .card h2 {
+      z-index: 99;
+      text-shadow: -1px 1px 0 #000,
+                         1px 1px 0 #000,
+                         1px -1px 0 #000,
+                         -1px -1px 0 #000;
+      font-family: "Jomhuria",sans-serif;
+      position: absolute;
+      bottom: 0;
+      right: 182px;
+      font-size: 60px;
+      font-weight: 700;
+      color: #fff; }
+   .container .card .fa-arrow-right {
+      z-index: 100;
+      position: absolute;
+      right: 75px;
+      bottom: 25px;
+      font-size: 56px;
+      cursor: pointer; }   
+    .container .card p {
+      z-index: 99;
+      position: absolute;
+      top: 20px;
+      right: 70px;
+      color: #333;
+      opacity: 0.7;
+      font-size: 17px;
+      letter-spacing: 1px;
+      writing-mode: vertical-rl;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+
+      .container .card .txt-esh {
+        direction: rtl;
+        z-index: 99;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        bottom: 6px;
+        color: #333;
+        opacity: 0.7;
+        font-size: 14px;
+        letter-spacing: 1px;
+        writing-mode: vertical-rl;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease; }
+
+    .container .card .pic {
+      z-index: 100;
+      width: 530px;
+      height: 280px;
+      background-image: url("photos/mahbodesi.jpg");
+      background-size: 100% 100%;
+      filter: grayscale(100%); }
+    .container .card .social {
+      position: absolute;
+      left: 90px;
+      top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 252px;
+      height: 90px;
+      border-radius: 80px; }
+    .container .card .social i:nth-of-type(1) {
+      -webkit-transition-delay: 0.4s;
+      transition-delay: 0.4s; }
+    .container .card .social i:nth-of-type(2) {
+      -webkit-transition-delay: 0.3s;
+      transition-delay: 0.3s; }
+    .container .card .social i:nth-of-type(3) {
+      -webkit-transition-delay: 0.2s;
+      transition-delay: 0.2s; }
+    .container .card .social i:nth-of-type(4) {
+      -webkit-transition-delay: 0.1s;
+      transition-delay: 0.1s; }
+    .container .card:hover i {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    .container .card button {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      width: 30px;
+      height: 30px;
+      background-color: #DA4D1D;
+      border: none;
+      border-radius: 30px;
+    /**  cursor: pointer;   **/
+      outline: none;
+      transition: all 0.3s ease;
+      mix-blend-mode: hard-light; }
+      .container .card button i {
+        font-size: 4rem; }
+    .container .card:hover button {
+      transform: scale(16.5); }
+    .container .card:hover p {
+      color: #fff; }
+    .container .card:hover .pic {
+      filter: grayscale(0); }
+  .container .card2 .pic {
+    background-image: url("photos/mohammadazade.jpg"); }
+  .container .card2 button {
+    background-color: #2b26c3; }
+
+.dr {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 100px; }
+  
+
+  .container .card:hover .pic-hanooshehpoor {
+    filter: grayscale(0); }
+
+  .container .card .pic-hanooshehpoor{
+    z-index: 100;
+    width: 530px;
+    height: 280px;
+    background-image: url("photos/hanooshepoor.jpg");
+    background-size: 100% 100%;
+    filter: grayscale(100%); }
+
+
+
+    .container .card .pic-bayati{
+      z-index: 100;
+      width: 530px;
+      height: 280px;
+      background-image: url("photos/mahbodesi.jpg");
+      background-size: 100% 100%;
+      filter: grayscale(100%); }
+  
+      .container .card:hover .pic-bayati {
+        filter: grayscale(0); }
+
+      .container .card .pic-biroodian{
+        z-index: 100;
+        width: 530px;
+        height: 280px;
+        background-image: url("photos/aminbiroodian.jpg");
+        background-size: 100% 100%;
+        filter: grayscale(100%); }
+       .container .card:hover .pic-biroodian {
+      filter: grayscale(0); }
+
+
+      .container .card .pic-amiralitvk{
+        z-index: 100;
+        width: 530px;
+        height: 280px;
+        background-image: url("photos/amiralitvk.jpg");
+        background-size: 100% 100%;
+        filter: grayscale(100%); }
+
+     .container .card:hover .pic-amiralitvk {
+      filter: grayscale(0); }
+
+
+
+
+      .container .card .pic-alihagani{
+        z-index: 100;
+        width: 530px;
+        height: 280px;
+        background-image: url("photos/alihagani.png");
+        background-size: 100% 100%;
+        filter: grayscale(100%); }
+
+     .container .card:hover .pic-alihagani {
+      filter: grayscale(0); 
+    }
+
+
+
+    .container .card .pic-arshia{
+      z-index: 100;
+      width: 530px;
+      height: 280px;
+      background-image: url("photos/arshia.png");
+      background-size: 100% 100%;
+      filter: grayscale(100%); }
+
+   .container .card:hover .pic-arshia {
+    filter: grayscale(0); 
+  }
+
+
+
+
+  .container .card .pic-parhamrmz{
+    z-index: 100;
+    width: 530px;
+    height: 280px;
+    background-image: url("photos/parhamrmz.png");
+    background-size: 100% 100%;
+    filter: grayscale(100%); }
+
+ .container .card:hover .pic-parhamrmz {
+  filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-parsarismanchi{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/parsarismanchi.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-parsarismanchi {
+filter: grayscale(0); 
+}
+
+
+
+
+
+
+
+
+.container .card .pic-sajjady{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/sajjady.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-sajjady {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-mokashani{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/mokashani.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-mokashani {
+filter: grayscale(0); 
+}
+
+
+.container .card .pic-sadrakaka{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/sadrakaka.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-sadrakaka {
+filter: grayscale(0); 
+}
+
+
+
+
+
+
+.container .card .pic-ata{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/ata.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-ata {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-yusef{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/yusef.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-yusef {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-yazdi{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/yazdi.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-yazdi {
+filter: grayscale(0); 
+}
+
+
+
+
+
+
+.container .card .pic-smile{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/smile.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-smile {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-bahman{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/bahman.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-bahman {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-aminhasani{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/aminhasani.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-aminhasani {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-khodamoradi{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/khodamoradi.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-khodamoradi {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-sahra{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/sahra.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-sahra {
+filter: grayscale(0); 
+}
+
+
+
+
+
+
+
+
+
+
+.container .card .pic-ramin{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/ramin.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-ramin {
+filter: grayscale(0); 
+}
+
+
+
+
+
+
+.container .card .pic-askar{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/askar.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-askar {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-blackgarden{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/blackgarden.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-blackgarden {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-nasr{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/nasr.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-nasr {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-modiri{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/modiri.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-modiri {
+filter: grayscale(0); 
+}
+
+
+.container .card .pic-erfanmo{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/erfanmo.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-erfanmo {
+filter: grayscale(0); 
+}
+
+
+
+
+
+
+.container .card .pic-ahmadi{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/ahmadi.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-ahmadi {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-nimaanoosh{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/nimaanoosh.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-nimaanoosh {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-nokhbe{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/nokhbe.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-nokhbe {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-aram{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/aram.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-aram {
+filter: grayscale(0); 
+}
+
+
+
+.container .card .pic-azade{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/mohammadazade.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-azade {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-radman{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/radman.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-radman {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-hirad{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/hirad.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-hirad {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-bayati{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/bayati.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-bayati {
+filter: grayscale(0); 
+}
+
+
+
+
+
+.container .card .pic-hesam{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/hesam.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-hesam {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-nimafarhadvand{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/nimafarhadvand.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-nimafarhadvand {
+filter: grayscale(0); 
+}
+
+
+
+
+.container .card .pic-matinmos{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/matinmos.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-matinmos {
+filter: grayscale(0); 
+}
+
+
+
+.container .card .pic-vali{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/vali.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-vali {
+filter: grayscale(0); 
+}
+
+
+
+.container .card .pic-naser{
+  z-index: 100;
+  width: 530px;
+  height: 280px;
+  background-image: url("photos/naser.jpg");
+  background-size: 100% 100%;
+  filter: grayscale(100%); }
+
+.container .card:hover .pic-naser {
+filter: grayscale(0); 
+}
+

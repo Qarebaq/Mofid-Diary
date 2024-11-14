@@ -50,6 +50,13 @@ body {
 
   align-items: center; 
   flex-direction: column; }
+
+
+  @media (max-width: 500px) {
+    container {
+      max-width: 350px;
+    }
+  }
   .container .card {
     position: relative;
     width: 700px;

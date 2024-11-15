@@ -47,16 +47,10 @@ body {
  /** justify-content: center; **/
 
 
-
   align-items: center; 
   flex-direction: column; }
 
 
-  @media (max-width: 500px) {
-    container {
-      max-width: 350px;
-    }
-  }
   .container .card {
     position: relative;
     width: 700px;
@@ -794,3 +788,17 @@ filter: grayscale(0);
 filter: grayscale(0); 
 }
 
+
+@media (max-width: 450px) {
+
+  .card{
+    max-width: 350px;
+  }
+  .card2{
+    max-width: 300px;
+  }
+  .container .card .pic{
+    max-width: 350px;
+    max-height: 280px;
+  }
+}

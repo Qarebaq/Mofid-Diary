@@ -27,25 +27,29 @@
 <title>دفترچه خاطرات دوره ۴۴</title>
 </head>
 <body>
-  <script>
+  <script>    
     function showPopup() {
       document.querySelector(".popup").style.display = "block";
       document.querySelector(".overlay").style.display = "block";
     }
 
+ 
     function closePopup() {
       document.querySelector(".popup").style.display = "none";
       document.querySelector(".overlay").style.display = "none";
     }
 
+   
     function checkResolution() {
-      if (window.innerWidth < 650) {
+      if (window.innerWidth < 600) {
         showPopup();
       }
     }
 
-    checkResolution();
+    
+    window.onload = checkResolution;
 
+   
     window.addEventListener("resize", checkResolution);
   </script>
 

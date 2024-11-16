@@ -3,6 +3,106 @@ line 34 is important dont forget to check it!
 **/
 
 
+@media (max-width: 400px) {
+
+  .card{
+    max-width: 350px;
+  }
+  .card2{
+    max-width: 300px;
+  }
+  .container .card .pic{
+    max-width: 350px;
+    max-height: 280px;
+  }
+  .text{
+    max-width: 300px;
+  }
+  #searchbar{
+    max-width: 300px;
+  }
+  .m{
+    max-width: 300px;
+  }
+  .o{
+    max-width: 300px;
+  }
+  .f{
+    max-width: 300px;
+  }
+  .d{
+    max-width: 300px;
+  }
+}
+
+
+ul {
+  list-style-type: none;
+}
+.text {
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+}
+
+.m { color: #4285F4; } /* Blue */
+.o { color: #EA4335; } /* Red */
+.f { color: #FBBC05; } /* Yellow */
+.i { color: #34A853; } /* Green */
+.d { color: #EA4335; } /* Red */
+
+#searchbar {
+  direction: rtl;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+margin-bottom: 50px;
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
+  font-size: 1em;
+  outline: none;
+  transition: all 0.3s ease;
+
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#searchbar:focus {
+  border-color: #8fd3f4;
+  box-shadow: 0 0 10px rgba(143, 211, 244, 0.5);
+}
+
+
+
+
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
     /* استایل برای پیام پاپ‌آپ */
     .popup {
       position: fixed;
@@ -844,17 +944,3 @@ filter: grayscale(0);
 filter: grayscale(0); 
 }
 
-
-@media (max-width: 400px) {
-
-  .card{
-    max-width: 350px;
-  }
-  .card2{
-    max-width: 300px;
-  }
-  .container .card .pic{
-    max-width: 350px;
-    max-height: 280px;
-  }
-}

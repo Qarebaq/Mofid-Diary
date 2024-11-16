@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Lalezar&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
 
-<!--test-->
+
 
 <!--icons from fontawsome-->
 <!--
@@ -25,15 +25,40 @@
 
 -->
 <title>دفترچه خاطرات دوره ۴۴</title>
-
 </head>
 <body>
+  <script>
+    function showPopup() {
+      document.querySelector(".popup").style.display = "block";
+      document.querySelector(".overlay").style.display = "block";
+    }
 
+    function closePopup() {
+      document.querySelector(".popup").style.display = "none";
+      document.querySelector(".overlay").style.display = "none";
+    }
+
+    function checkResolution() {
+      if (window.innerWidth < 400) {
+        showPopup();
+      }
+    }
+
+    checkResolution();
+
+    window.addEventListener("resize", checkResolution);
+  </script>
 
   
 <br>
 </br>
   <br>
+  <div class="overlay"></div>
+  <div class="popup">
+    <h2>پیام قره باغ</h2>
+    <p>همونطور که میدونی من تو ریسپانسیو سازی صفحه اصلا خوب نیستم پیشنهاد میکنم با کامپیوتر بیای</p>
+    <button onclick="closePopup()">باشه حالا بزار یه چرخی بزنیم </button>
+  </div>
   <!--اینجا خیلی مهمه و برای کلاس ها از این استفاده کردی یادت باشه-->
   <br>
   <h3 id="class-a" style="float: right;margin-right:30px;font-family: Jomhuria;font-size: 40px;color:#DA4D1D;">
@@ -46,7 +71,7 @@
   <br>
  
 
-    <div  class="container">
+    <div class="container">
 
             <!--مهبد اسحاقی-->
 
@@ -5274,12 +5299,4 @@
 
 
 </body>
-
-
-<!--testing commiting an  update on github by vs code-->
-
-
-
 </html>
-
-
